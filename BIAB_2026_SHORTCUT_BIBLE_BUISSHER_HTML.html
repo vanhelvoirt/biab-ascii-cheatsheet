@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BIAB SHORTCUTS BIBLE BUISSHER</title>
+ 
+  <!-- Metadata -->
+  <meta name="author" content="frenq and CP">
+  <meta name="version" content="1.0"> 
+  <meta name="last-updated" content="2026-01-30">
+  <meta name="keywords" content="BIAB, Band in a Box, ASCII, Cheatsheet, Shortcuts, Shortcut bible, Workflow, Studio, MIDI, Audio, Referentie">
+
+  <style>
+    body {
+      font-family: Consolas, "Courier New", monospace;
+      margin: 5px;
+    }
+
+    pre.page {
+      white-space: pre; /* behoud ASCII layout */
+      margin-bottom: 5px;
+    }
+
+    .print-bar {
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 1px solid #ccc;
+      text-align: right;
+    }
+
+    /* Printinstellingen */
+    @media print {
+      @page {
+        size: A4 landscape;   /* forceer landscape */
+        margin: 5mm;
+      }
+
+      body {
+        font-size: 11pt;   /* <<< PRINT FONTSIZE */
+      }
+
+      .print-bar {
+        display: none;        /* printknop verbergen */
+      }
+
+      .pagebreak {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PAGINA 1 -->
+<pre class="page">
+----------------------------------------------------------------------------------------------
+|   ____  ___    _     ____        ____  _   _ ___ ____   ____  _   _ _____ ____             |
+|  | __ ) | |   / \   | __ )      | __ )| | | |_ _/ ___| / ___|| | | | ____|  _ \            |
+|  |  _ < | |  / _ \  |  _ \      |  _ \| | | || |\___ \ \___ \| |_| |  _| | |_) |           |
+|  | |_) || | / /_\ \ | |_) |     | |_) | |_| || | ___) | ___) |  _  | |___|  _ <            |
+|  |____/ |_|/_/   \_\|____/      |____/ \___/|___|____/ |____/|_| |_|_____|_| \_\           |
+|                                                                                            |
+|                         B I A B   S H O R T C U T S   B I B L E                            |
+----------------------------------------------------------------------------------------------
+|  Complete ASCII Reference • Hidden Shortcuts • Developer Tools • Mixer • RT/RD Debug       |
+|  Navigation • Regeneration • MIDI Tools • Structure • Utility Tracks • Power Functions     |
+----------------------------------------------------------------------------------------------
+|                                   Created by Frenq & CP 2026 V1                            |
+|                                  Only distribute with this header                          |
+----------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| BIAB SHORTCUTS AND MORE - LANDSCAPE ASCII (<=160 chars wide)                                                                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Playback & Transport                           | Navigation                                       | Editing                                           |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Spacebar        Start/Stop playback            | F5                   Bar Settings                | Ctrl+Z                Undo                        |
+| Ctrl+Space      Play from current bar          | Ctrl+G               Go to bar number            | Ctrl+Y                Redo                        |
+| F10             Play from bar 1                | Home                 Jump to start               | Ctrl+C                Copy                        |
+| F4              Generate all tracks            | End                  Jump to end                 | Ctrl+V                Paste                       |
+| Ctrl+F4         Generate selected track        | PgUp                 Scroll up                   | Ctrl+X                Cut                         |
+| Ctrl+Shift+F    Freeze selected track          | PgDn                 Scroll down                 | Delete                Delete                      |
+| Ctrl+Shift+U    Unfreeze selected track        | Arrow Keys           Move between bars           | Ctrl+A                Select all                  |
+|                 (hidden) Ctrl+Enter            | (hidden) Shift+PgUp  Fast scroll up              | Ctrl+Shift+C          Copy chords                 |
+|                 Play from highlighted          | (hidden) Shift+PgDn  Fast scroll down            | Ctrl+Shift+V          Paste chords                |
+|                 bar in Chord Sheet             | (hidden) Ctrl+Home   Jump to bar 1               | (hidden) Ctrl+Shift+X Remove chords               |
+|                                                | (hidden) Ctrl+End    Jump to last bar            | (hidden) Ctrl+D       Duplicate selection         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tracks & RealTracks                            | MIDI & Notation                                  | Audio & Audio Edit                                |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Ctrl+T              Track settings             | N                 Notation window                | A                   Audio window                  |
+| Ctrl+Shift+T        Regenerate sel. track      | Ctrl+Shift+N      New notation layer             | Ctrl+Shift+A        Audio Edit                    |
+| Ctrl+Shift+K        Choose RealTrack           | Ctrl+Shift+E      Event list                     | Ctrl+Shift+H        Harmonize audio               |
+| Ctrl+Shift+M        Choose MIDI instrument     | Ctrl+Shift+S      Step entry mode                | Ctrl+Shift+P        Pitch correction              |
+| Ctrl+Shift+R        Select RealDrums           | + / -             Octave up/down                 | Ctrl+Shift+D        Detect chords from audio      |
+| Ctrl+Shift+L        Load Track Preset          | Insert            Insert note (notation)         | (hidden) Alt+P      Play audio selection          |
+| (hidden) Alt+R      RealTrack picker           | Delete            Delete note                    | (hidden) Alt+H      Toggle harmonies preview      |
+| (hidden) Shift+T    Toggle track type          | Ctrl+L            Lyrics window                  | (hidden) Shift+A    Toggle audio layers           |
+| (hidden) Ctrl+Alt+T Track freeze options       | Ctrl+Shift+L      Lyric entry mode               | (hidden) Ctrl+Alt+P Pitch snap on/off             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+<div class="pagebreak"></div>
+
+<!-- PAGINA 2 -->
+<pre class="page">
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Mixer & Stems                                  | Files & Project                                  | EXTRA NOTES                                       | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| M                 Mixer                        | Ctrl+N                New song                   |                                                   |
+| Ctrl+Shift+M      Mixer presets                | Ctrl+O                Open                       |                                                   |
+| Ctrl+Shift+S      Save mixer snapshot          | Ctrl+S                Save                       |                                                   |
+| Ctrl+Shift+E      Export stems                 | Ctrl+Shift+S          Save As                    |                                                   |
+| (hidden) Alt+M    Toggle mixer view            | Ctrl+P                Print                      |                                                   |
+| (hidden) Shift+M  Mute all                     | Ctrl+Q                Quit BIAB                  |                                                   |
+| (hidden) Ctrl+M   Solo all                     | (hidden) Ctrl+Shift+O Open recent                |                                                   |
+| (hidden) Alt+S    Stem export dialog           | (hidden) Ctrl+Alt+S   Save all                   |                                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Window-Specific Shortcuts                                                                                                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| NOTATION WINDOW:                               | AUDIO EDIT WINDOW:                               | PIANO ROLL:                                       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| L                 Line thickness toggle        | E                 Edit mode                      | P                   Piano Roll window             |
+| H                 Handwriting mode             | S                 Split audio                    | Ctrl+Click          Add note                      |
+| S                 Slur tool                    | Ctrl+K            Add marker                     | Shift+Click         Delete note                   |
+| T                 Text tool                    | Ctrl+Shift+K      Delete marker                  | Alt+Drag            Velocity adjust               |
+| R                 Rest entry                   | Alt+S             Snap to transient              | Ctrl+Shift+Up/Down  Move note octave              |
+| Ctrl+1..8         Change note duration         | Shift+Drag        Time-stretch region            |                                                   |
+| Shift+Arrow       Nudge note                   |                                                  |                                                   |
+| Ctrl+Arrow        Move note diatonically       |                                                  |                                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| CHORD SHEET:                                   | STYLEMAKER:                                      | SOLOIST / MELODIST:                               |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Ctrl+Enter        Play from highlighted bar    | F9                Generate style                 |   Ctrl+Shift+F5     Open Soloist                  |
+| Ctrl+Shift+G      Generate chords              | Ctrl+Shift+R      Rebuild style                  |   Ctrl+Shift+F6     Open Melodist                 |
+| Alt+C             Chord builder                | Alt+T             Pattern editor                 |   Alt+S             Generate solo                 |
+|                                                |                                                  |   Alt+M             Generate melody               |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| VIDEO WINDOW:                                  | SONG FORM MAKER:                                 |                                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| V                 Video window                 | F6                Song Form dialog               |                                                   |
+| Space             Play/Pause video             | Ctrl+Shift+F6     Generate form                  |                                                   |
+| Ctrl+Shift+V      Export video                 | Alt+F             Form presets                   |                                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+<div class="pagebreak"></div>
+
+<!-- PAGINA 3 -->
+<pre class="page">
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| BAR CHORD OPTIONS                                                                                                                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| PUSHES               | HOLDS / SHOTS / BREAKS                          | MAAT / ACCENT / MELODY          | EXTRA NOTES                                |
+-----------------------|-------------------------------------------------|-------------------------------------------------------------------------------
+| ^  kleine push       | .   hold                                        | /   repeat beat                 |                                            |
+| ^^ grote push        | ..  long hold                                   | ,   split                       |                                            |
+|                      | ... extra long                                  | |   measure line                |                                            |
+|                      | *   shot                                        | >   accent                      |                                            |
+|                      | *.  shot+hold                                   | <   de-accent                   |                                            |
+|                      | ^.  push+hold                                   | =   even sustain                |                                            |
+|                      | ^.. push+long                                   | .   staccato                    |                                            |
+|                      | .b  hold+break                                  | ..  extra short                 |                                            |
+|                      | *b  shot+break                                  |                                 |                                            |
+|                      | ^b  push+break                                  |                                 |                                            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| INSTR CONTROL (F5)   | INSTR-SUFFIXEN                                  | SUBSET-STYLES / FILETYPES       |                                            |
+-----------------------|-------------------------------------------------|-------------------------------------------------------------------------------
+| bas only = Bass on   | .bass                                           | .BGD  Bass+Guitar+Drums         |                                            |
+| drums only= Drums on | .piano                                          | .BD   Bass+Drums                |                                            |
+| bas+drums = B+D on   | .guitar                                         | .GD   Guitar+Drums              |                                            |
+| gitaar-z-piano=G on  | .strings                                        | .B    Bass only                 |                                            |
+| trio B+G+D = on      | .drums                                          | .D    Drums only                |                                            |
+|                      |                                                 | .G    Guitar only               |                                            |
+|                      | combi bas only = .piano .guitar .strings .drums | .SGU  song                      |                                            |
+|                      | combi drums only= .bass .piano .guitar .strings | .MGU  song+melodie              |                                            |
+|                      | combi B+D = .piano .guitar .strings             | .STY  style                     |                                            |
+|                      |                                                 | .PAT  midi drums                |                                            |
+|                      |                                                 | .BT0/BT1 realdrums              |                                            |
+|                      |                                                 | .BGU  realtracks                |                                            |
+|                      |                                                 | .BGD  trio                      |                                            |
+|                      |                                                 | .SEQ  midi seq                  |                                            |
+|                      |                                                 | .MID  midi                      |                                            |
+|                      |                                                 | .WAV  audio                     |                                            |
+|                      |                                                 | .MP3  audio                     |                                            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+<div class="pagebreak"></div>
+
+<!-- PAGINA 4 -->
+<pre class="page">
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| BIAB HIDDEN SHORTCUTS                                                                                                                                 |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| REGENERATE / ENGINE        | REALTRACKS / REALDRUMS DEBUG           | MIDI / ROUTING / DEV                         |  EXTRA NOTES                     | 
+-----------------------------|----------------------------------------|----------------------------------------------|-----------------------------------
+| F8 regen all               | ALT+SHIFT+T RT Picker debug            | CTRL+SHIFT+M MIDI Monitor                    |                                  |
+| ALT+F8 regen track         | CTRL+SHIFT+R rebuild RT cache          | CTRL+ALT+SHIFT+M MIDI routing matrix         |                                  |
+| CTRL+SHIFT+F8 regen bar    | CTRL+SHIFT+D rebuild RD cache          | CTRL+SHIFT+H chord interp log                |                                  |
+| ALT+SHIFT+W redraw wave    | ALT+SHIFT+R RealDrums debug view       | CTRL+SHIFT+L lock chord sheet layout         |                                  |
+| TRACK CONTROL              | UTILITY / VIEW                         | STYLE / INTERNAL PARAMS                      |                                  |
+|----------------------------|----------------------------------------|----------------------------------------------|                                  |
+| SHIFT+M mute track         | CTRL+SHIFT+U show Utility Tracks       | CTRL+SHIFT+S save style hidden params        |                                  |
+| SHIFT+S solo track         | CTRL+SHIFT+K show all RTs              | CTRL+ALT+SHIFT+F style parameter dump        |                                  |
+| SHIFT+U unmute all         | CTRL+SHIFT+J jump next part marker     | CTRL+ALT+SHIFT+T RT tempo matrix             |                                  |
+| SONG / STRUCTURE           | CHORD SHEET / PART MARKERS             | MISC / RARE                                  |                                  |
+|----------------------------|----------------------------------------|----------------------------------------------|                                  |
+| ALT+SHIFT+N new chorus     | ALT+SHIFT+P refresh part markers       | ALT+SHIFT+F8 hidden regen mode (varies)      |                                  |
+| CTRL+SHIFT+P reinterp PM   | CTRL+SHIFT+H chord log (deep)          | SHIFT+U unmute all (undocumented)            |                                  |
+|                            | CTRL+SHIFT+L lock layout               | ALT+SHIFT+W waveform redraw                  |                                  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| BIAB EXTRA SHORTCUTS                                                                                                                                  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| NAVIGATION / STRUCTURE     | MIXER / AUDIO ENGINE                  | MELODY / MIDI TOOLS                          | EXTRA NOTES                       |
+|----------------------------|---------------------------------------|----------------------------------------------|-----------------------------------|
+| CTRL+SHIFT+ARROW UP        | ALT+SHIFT+M mixer minimal mode        | ALT+SHIFT+L melody re-interpret              |                                   |
+| CTRL+SHIFT+ARROW DOWN      | CTRL+SHIFT+V reset mixer              | CTRL+SHIFT+I MIDI event inspector            |                                   |
+| CTRL+SHIFT+HOME            | ALT+M toggle mixer                    |                                              |                                   |
+| CTRL+SHIFT+END             | ALT+SHIFT+W waveform redraw           |                                              |                                   |
+|-------------------------------------------------------------------------------------------------------------------|                                   |
+| CHORUS / PART MARKERS      | TRACK CONTROL                         | PRINT / EXPORT                               |                                   |
+|----------------------------|---------------------------------------|----------------------------------------------|                                   |
+| CTRL+SHIFT+G prev chorus   | SHIFT+M mute track                    | CTRL+SHIFT+P print preview                   |                                   |
+| ALT+SHIFT+N new chorus     | SHIFT+S solo track                    | CTRL+SHIFT+E export MIDI direct              |                                   |
+| CTRL+SHIFT+P reinterp PM   | SHIFT+U unmute all                    |                                              |                                   |
+--------------------------------------------------------------------------------------------------------------------|                                   |
+| RARE / HIDDEN              | ENGINE / CACHE                        | DEBUG / INTERNAL                             |                                   |
+|----------------------------|---------------------------------------|----------------------------------------------|                                   |
+| CTRL+SHIFT+W clear mutes   | CTRL+SHIFT+R rebuild RT cache         | CTRL+ALT+SHIFT+F style param dump            |                                   |
+| ALT+SHIFT+F8 regen mode    | CTRL+SHIFT+D rebuild RD cache         | CTRL+ALT+SHIFT+T RT tempo matrix             |                                   |
+|                            |                                       |                                              |                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+<div class="print-bar">
+  <button onclick="window.print()">Print Biab Buissher</button>
+</div>
+
+</body>
+</html>
